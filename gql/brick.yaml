@@ -1,0 +1,16 @@
+name: gql
+description: A new brick created with the Mason CLI.
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.49 <0.1.0"
+
+vars:
+  className:
+    type: string
+    prompt: What is the class name?
+  injectable:
+    type: boolean
+    prompt: "Use Injectable Annotations? "
+    default: false

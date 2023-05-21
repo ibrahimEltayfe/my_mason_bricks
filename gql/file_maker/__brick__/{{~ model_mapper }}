@@ -1,0 +1,7 @@
+extension Api{{modelName.pascalCase()}}ModelMapper on Api{{modelName.pascalCase()}}Model{
+  {{modelName.pascalCase()}}Entity get mapToEntity {
+    return {{modelName.pascalCase()}}Entity(
+
+    );
+  }
+}

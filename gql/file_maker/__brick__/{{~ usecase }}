@@ -1,0 +1,9 @@
+{{#useCaseData}}class {{name.pascalCase()}}UseCase{
+  final {{className.pascalCase()}}Repository _{{className.camelCase()}}Repository;
+  const {{name.pascalCase()}}UseCase(this._{{className.camelCase()}}Repository);
+
+  Future<{{{functionReturnType}}}> execute({{#variables}}{{{parameterType}}} {{parameterName}},{{/variables}}) async{
+    return await _{{className.camelCase()}}Repository.{{name}}({{#variables}}{{parameterName}},{{/variables}});
+  }
+}
+{{/useCaseData}}

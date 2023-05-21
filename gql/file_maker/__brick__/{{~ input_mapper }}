@@ -1,0 +1,7 @@
+extension {{modelName.pascalCase()}}Mapper on {{modelName.pascalCase()}}{
+  Api{{modelName.pascalCase()}} get mapToApiInput {
+    return Api{{modelName.pascalCase()}}(
+
+    );
+  }
+}

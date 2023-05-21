@@ -1,0 +1,40 @@
+name: file_maker
+description: A new brick created with the Mason CLI.
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.49 <0.1.0"
+
+
+vars:
+  modelName:
+    type: string
+    default: modelName
+    prompt: Model Name?
+
+  className:
+    type: string
+    default: className
+    prompt: className
+
+  isModelMapper:
+    type: boolean
+    default: false
+    prompt: Is Mapper?
+  
+  isInputMapper:
+    type: boolean
+    default: false
+    prompt: isInputModel
+
+  isModel:
+    type: boolean
+    default: false
+    prompt: isModel
+
+  isUseCase:
+    type: boolean
+    default: false
+    prompt: isModel
+
